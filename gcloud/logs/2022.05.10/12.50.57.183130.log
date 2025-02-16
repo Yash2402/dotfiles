@@ -1,0 +1,199 @@
+2022-05-10 12:50:57,184 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2022-05-10 12:50:57,187 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update']
+2022-05-10 12:50:57,188 DEBUG    root            Running [gcloud.components.update] with arguments: [--quiet: "True"]
+2022-05-10 12:50:57,189 INFO     ___FILE_ONLY___ Beginning update. This process may take several minutes.
+
+2022-05-10 12:50:57,199 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-05-10 12:50:57,201 DEBUG    root            HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/yashsharma/miniforge3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/surface/components/update.py", line 124, in Run
+    update_manager.Update(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 989, in Update
+    install_state, diff = self._GetStateAndDiff(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 692, in _GetStateAndDiff
+    latest_snapshot = self._GetLatestSnapshot(version=version,
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 675, in _GetLatestSnapshot
+    return snapshots.ComponentSnapshot.FromURLs(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 175, in FromURLs
+    data = [
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 176, in <listcomp>
+    (ComponentSnapshot._DictFromURL(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 200, in _DictFromURL
+    response = installers.MakeRequest(url, command_path)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 114, in MakeRequest
+    return _RawRequest(url, headers=headers, timeout=timeout)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 162, in _RawRequest
+    return retryer.RetryOnException(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 201, in RetryOnException
+    exceptions.reraise(exc_info[1], tb=exc_info[2])
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/six/__init__.py", line 693, in reraise
+    raise value
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 182, in TryFunc
+    return func(*args, **kwargs), None
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 192, in _ExecuteRequestAndRaiseExceptions
+    response = requests_session.get(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 251, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 216, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2022-05-10 12:50:57,203 ERROR    ___FILE_ONLY___ BEGIN CRASH STACKTRACE
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/yashsharma/miniforge3/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 724, in urlopen
+    retries = retries.increment(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 190, in Wrapper
+    target_function(*args, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 186, in main
+    gcloud_cli.Execute()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1013, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1050, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 547, in HandleError
+    core_exceptions.reraise(exc)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/six/__init__.py", line 693, in reraise
+    raise value
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/surface/components/update.py", line 124, in Run
+    update_manager.Update(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 989, in Update
+    install_state, diff = self._GetStateAndDiff(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 692, in _GetStateAndDiff
+    latest_snapshot = self._GetLatestSnapshot(version=version,
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 675, in _GetLatestSnapshot
+    return snapshots.ComponentSnapshot.FromURLs(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 175, in FromURLs
+    data = [
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 176, in <listcomp>
+    (ComponentSnapshot._DictFromURL(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 200, in _DictFromURL
+    response = installers.MakeRequest(url, command_path)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 114, in MakeRequest
+    return _RawRequest(url, headers=headers, timeout=timeout)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 162, in _RawRequest
+    return retryer.RetryOnException(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 201, in RetryOnException
+    exceptions.reraise(exc_info[1], tb=exc_info[2])
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/six/__init__.py", line 693, in reraise
+    raise value
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 182, in TryFunc
+    return func(*args, **kwargs), None
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 192, in _ExecuteRequestAndRaiseExceptions
+    response = requests_session.get(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 251, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 216, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2022-05-10 12:50:57,204 ERROR    root            gcloud crashed (ConnectionError): HTTPSConnectionPool(host='dl.google.com', port=443): Max retries exceeded with url: /dl/cloudsdk/channels/rapid/components-2.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10343f9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2022-05-10 12:50:57,205 INFO     ___FILE_ONLY___ 
+If you would like to report this issue, please run the following command:
+
+2022-05-10 12:50:57,205 INFO     ___FILE_ONLY___   gcloud feedback
+
+2022-05-10 12:50:57,205 INFO     ___FILE_ONLY___ 
+To check gcloud for common problems, please run the following command:
+
+2022-05-10 12:50:57,205 INFO     ___FILE_ONLY___   gcloud info --run-diagnostics
+

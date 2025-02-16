@@ -1,0 +1,15 @@
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Setting","setting":"theme","value":"Andromeda"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Setting","setting":"keymap","value":"VSCode"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"App","operation":"open"}
+{"signed_in":true,"milliseconds_since_first_event":0,"type":"Editor","operation":"open","file_extension":"js","vim_mode":true,"copilot_enabled":true,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":951,"type":"Editor","operation":"open","file_extension":"md","vim_mode":true,"copilot_enabled":true,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":8463,"type":"Editor","operation":"open","file_extension":"ts","vim_mode":true,"copilot_enabled":true,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":10036,"type":"Editor","operation":"open","file_extension":"json","vim_mode":true,"copilot_enabled":true,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":16439,"type":"Editor","operation":"open","file_extension":"tsx","vim_mode":true,"copilot_enabled":true,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":225917,"type":"Memory","memory_in_bytes":26378240,"virtual_memory_in_bytes":441818087424}
+{"signed_in":true,"milliseconds_since_first_event":225917,"type":"Cpu","usage_as_percentage":8.382385,"core_count":8}
+{"signed_in":true,"milliseconds_since_first_event":0,"type":"Memory","memory_in_bytes":44679168,"virtual_memory_in_bytes":441818660864}
+{"signed_in":true,"milliseconds_since_first_event":0,"type":"Cpu","usage_as_percentage":0.27249807,"core_count":8}
+{"signed_in":true,"milliseconds_since_first_event":240327,"type":"Memory","memory_in_bytes":21004288,"virtual_memory_in_bytes":433228005376}
+{"signed_in":true,"milliseconds_since_first_event":240358,"type":"Cpu","usage_as_percentage":0.22998476,"core_count":8}
+{"signed_in":true,"milliseconds_since_first_event":288692,"type":"Edit","duration":35715,"environment":"terminal"}

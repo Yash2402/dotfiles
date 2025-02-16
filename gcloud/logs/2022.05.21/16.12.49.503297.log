@@ -1,0 +1,245 @@
+2022-05-21 16:12:49,504 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2022-05-21 16:12:49,506 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2022-05-21 16:12:49,508 DEBUG    root            Running [gcloud.components.install] with arguments: [--quiet: "True", COMPONENT-IDS:5: "['beta', 'kubectl', 'skaffold', 'minikube', 'gsutil']"]
+2022-05-21 16:12:49,516 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-05-21 16:12:49,726 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v386.0.0.json HTTP/1.1" 200 187088
+2022-05-21 16:12:49,770 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,770 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 386.0.0
+
+2022-05-21 16:12:49,771 INFO     ___FILE_ONLY___ Installing components from version: 386.0.0
+
+2022-05-21 16:12:49,771 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ ┌─────────────────────────────────────────────────┐
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ │       These components will be installed.       │
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ ├─────────────────────────┬────────────┬──────────┤
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ │           Name          │  Version   │   Size   │
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ ├─────────────────────────┼────────────┼──────────┤
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ Minikube               
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___     1.25.2
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ 27.1 MiB
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,774 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ Skaffold               
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___     1.38.0
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 19.2 MiB
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ gcloud Beta Commands   
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 2022.05.13
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  < 1 MiB
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ gcloud cli dependencies
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 2021.04.16
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  < 1 MiB
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,775 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ gke-gcloud-auth-plugin 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___      0.2.0
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  3.7 MiB
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ kubectl                
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___     1.21.9
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ 52.0 MiB
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ kubectl                
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___     1.21.9
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │ 
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  < 1 MiB
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___  
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ │
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ └─────────────────────────┴────────────┴──────────┘
+2022-05-21 16:12:49,776 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,777 INFO     ___FILE_ONLY___ 
+
+2022-05-21 16:12:49,779 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-05-21 16:12:49,978 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 804997
+2022-05-21 16:12:50,041 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2022-05-21 16:12:50,047 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2022-05-21 16:12:50,047 INFO     ___FILE_ONLY___ ╠═ Creating update staging area                             ═╣
+
+2022-05-21 16:12:50,047 INFO     ___FILE_ONLY___ ╚
+2022-05-21 16:12:50,047 INFO     ___FILE_ONLY___ ══════
+2022-05-21 16:12:50,047 INFO     ___FILE_ONLY___ ══════
+2022-05-21 16:12:50,047 INFO     ___FILE_ONLY___ ══════
+2022-05-21 16:12:50,443 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:50,539 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:50,746 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:50,924 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,054 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,239 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,414 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,521 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,676 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,792 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:51,982 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,106 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,214 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,288 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,370 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,506 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,664 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,772 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:52,899 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,036 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,133 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,242 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,356 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,458 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,568 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,682 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,790 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:53,909 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,014 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,153 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,272 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,390 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,513 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,639 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:54,935 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,091 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,415 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,485 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,551 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,606 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,661 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,757 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,761 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,762 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,763 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,764 INFO     ___FILE_ONLY___ ═
+2022-05-21 16:12:55,764 DEBUG    root            [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 1078, in Update
+    staging_state = install_state.CloneToStaging(pb.SetProgress)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/local_state.py", line 104, in _TryFunc
+    return func(*args, **kwargs)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/local_state.py", line 336, in CloneToStaging
+    shutil.copytree(self.__sdk_root, self.__sdk_staging_root, symlinks=True,
+  File "/Users/yashsharma/miniforge3/lib/python3.9/shutil.py", line 566, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/Users/yashsharma/miniforge3/lib/python3.9/shutil.py", line 522, in _copytree
+    raise Error(errors)
+shutil.Error: [('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/pyasn1_modules/__pycache__', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/pyasn1_modules/__pycache__', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/certifi', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/certifi', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/prompt_toolkit', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/prompt_toolkit', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/jsonschema', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/jsonschema', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/concurrent', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/concurrent', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/appdirs', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/appdirs', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/oauth2client', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/oauth2client', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/yaml', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/yaml', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/contextlib2', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/contextlib2', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/jmespath', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/jmespath', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/socks', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/socks', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/fasteners', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/fasteners', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/urllib3', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/urllib3', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/apitools', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/apitools', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/setuptools', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/setuptools', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/pkg_resources', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/pkg_resources', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/six', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/six', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/kubernetes', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/kubernetes', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/httplib2shim', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/httplib2shim', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/dns', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/dns', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/ml_sdk', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/ml_sdk', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/uritemplate', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/uritemplate', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/dateutil', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/dateutil', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/pubsublite', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/pubsublite', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/ruamel', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/ruamel', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/boto3', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/boto3', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/third_party/dulwich', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/lib/third_party/dulwich', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/data', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/data', '[Errno 32] Broken pipe'), ('/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/rpm', '/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk.staging/rpm', '[Errno 32] Broken pipe')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/surface/components/install.py", line 90, in Run
+    update_manager.Install(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 947, in Install
+    return self.Update(
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 1078, in Update
+    staging_state = install_state.CloneToStaging(pb.SetProgress)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/console/console_io.py", line 891, in __exit__
+    self.Finish()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/console/console_io.py", line 881, in Finish
+    self.SetProgress(1)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/console/console_io.py", line 872, in SetProgress
+    self._Write(self._box.d_h * new_ticks)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/console/console_io.py", line 884, in _Write
+    self._stream.write(msg)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/log.py", line 237, in write
+    self._Write(plain_text, styled_text)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/log.py", line 232, in _Write
+    self.flush()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/log.py", line 247, in flush
+    self.__stream_wrapper.stream.flush()
+BrokenPipeError: [Errno 32] Broken pipe

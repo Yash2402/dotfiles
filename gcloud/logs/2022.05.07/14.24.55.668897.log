@@ -1,0 +1,26 @@
+2022-05-07 14:24:55,670 DEBUG    root            Loaded Command Group: ['gcloud', 'version']
+2022-05-07 14:24:55,672 DEBUG    root            Running [gcloud.version] with arguments: [--format: "json"]
+2022-05-07 14:24:55,683 INFO     root            Display format: "flattened[no-pad,separator=" "] json"
+2022-05-07 14:24:55,684 INFO     ___FILE_ONLY___ {
+  "Google Cloud SDK": "384.0.1",
+  "beta": "2022.05.04",
+  "bq": "2.0.74",
+  "core": "2022.05.04",
+  "gsutil": "5.10",
+  "kubectl": "1.21.9",
+  "minikube": "1.25.2",
+  "skaffold": "1.38.0"
+}
+2022-05-07 14:24:55,684 INFO     ___FILE_ONLY___ 
+
+2022-05-07 14:24:55,684 DEBUG    root            [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 810, in Run
+    resources = display.Displayer(command_instance, args, resources,
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 491, in Display
+    log.out.flush()
+  File "/Users/yashsharma/Library/Application Support/cloud-code/installer/google-cloud-sdk/lib/googlecloudsdk/core/log.py", line 247, in flush
+    self.__stream_wrapper.stream.flush()
+BrokenPipeError: [Errno 32] Broken pipe
