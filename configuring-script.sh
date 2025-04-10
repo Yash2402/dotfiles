@@ -4,15 +4,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-HOME_BACKUP_DIR="/run/media/yashsharma/Samsung T7/linux-backup/home"
 CONFIG_DIR="$HOME/dev/dotfiles"
 
 echo "0. SYSTEM UPDATE --------------------------------------------------------"
 sudo dnf update -y && sudo dnf upgrade -y
-
-echo "CONNECT TO SSD FIRST"
-echo "You have 10 seconds..."
-sleep 10
 
 echo "1. INSTALLING CORE PACKAGES ---------------------------------------------"
 sudo dnf install -y \
@@ -20,18 +15,13 @@ sudo dnf install -y \
     alacritty btop cava mpv kitty neovim obs-studio picom polybar rofi maim tmux \
     zsh curl wget unzip \
     gcc g++ clang clang++ \
-    feh cmatrix brightnessctl \
+    feh cmatrix brightnessctl xset\
     python3-pydbus
 
 echo "2. SSH SETUP ------------------------------------------------------------"
-if [ -d "${HOME_BACKUP_DIR}/.ssh" ]; then
-    echo "Copying .ssh directory..."
-    cp -r "${HOME_BACKUP_DIR}/.ssh" "$HOME/"
-    chmod 700 "$HOME/.ssh"
-    chmod 600 "$HOME/.ssh"/*
-else
-    echo "WARNING: Backup .ssh directory not found in ${HOME_BACKUP_DIR}"
-fi
+read -p "Enter your email: " email
+ssh-keygen -t ed25519 -C "$email"
+echo "Copy the public ssh key from ~/.ssh/id_ed25519.pub and add it to your github account"
 
 echo "3. ZSH SETUP ------------------------------------------------------------"
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -118,6 +108,17 @@ for tool in boomer autotilling neofetch; do
         echo "WARNING: Tool $tool not found in $CONFIG_DIR/tools"
     fi
 done
+
+echo "    - betterlockscreen installation"
+wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | bash -s user
+sudo dnf install -y giflib-devel.aarch64 autoconf automake cairo-devel fontconfig gcc libev-devel libjpeg-turbo-devel libXinerama libxkbcommon-devel libxkbcommon-x11-devel libXrandr pam-devel pkgconf xcb-util-image-devel xcb-util-xrm-devel
+git clone https://github.com/Raymo111/i3lock-color.git
+cd i3lock-color
+./build.sh
+./install-i3lock-color.sh
+cd ..
+rm -rf i3lock-color
+betterlockscreen -u ~/dev/dotfiles/.config/screenshots/Wallpaper-used-vortex-ring-sobel-figma-created-by-yash-sharma.png --fx dim,pixel,blur,dimpixel
 
 
 

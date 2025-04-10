@@ -2,8 +2,21 @@
 
 Minimal yet powerful dotfiles tailored for my personal Linux setup on Asahi Linux with `i3`, `neovim`, `zsh`, and more.
 
+## Screenshots
+
+- Desktop
 <p align="center">
   <img src=".config/screenshots/Asahi-Linux-Neofetch.png" alt="Desktop Screenshot" width="80%"/>
+</p>
+
+- Polybar
+<p align="center">
+  <img src=".config/screenshots/Polybar.png" alt="Polybar" width="80%"/>
+</p>
+
+- Lock Screen 
+<p align="center">
+  <img src=".config/screenshots/Lock-screen.jpg" alt="Lock Screen" width="80%"/>
 </p>
 
 ---
@@ -25,6 +38,7 @@ Minimal yet powerful dotfiles tailored for my personal Linux setup on Asahi Linu
 
 ## Setup Instructions
 
+> [!WARNING] 
 > Warning: This script is written specifically for my environment (Asahi Linux + Fedora). Please read before running.
 
 ### 1. Clone the repo
@@ -38,12 +52,9 @@ cd ~/dev/dotfiles
 ### 2. Run the setup script
 
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x configuring-script.sh
+./configuring-script.sh
 ```
-
-> Make sure your SSD is connected before running the script. It uses backups from the external drive.
-> ONLY FOR ME (JUST TO COPY MY SSH KEYS FROM MY SSD
 ---
 
 ## Folder Structure
@@ -62,7 +73,7 @@ dotfiles/
 │   ├── boomer
 │   ├── autotilling
 │   └── neofetch
-└── setup.sh
+└── configuring-script.sh
 ```
 
 ---
