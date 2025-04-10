@@ -13,7 +13,7 @@ wallpaper_cmd="feh --bg-fill"
 quiet=false
 
 # default theme
-loginbox=44444400
+loginbox=000000dd
 loginshadow=00000000
 locktext="Type your password to unlock"
 font="Satoshi Variable"
