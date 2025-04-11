@@ -51,7 +51,7 @@ install_core_packages() {
         alacritty btop cava mpv kitty neovim obs-studio picom polybar rofi maim tmux \
         zsh curl wget unzip \
         gcc g++ clang clang++ \
-        feh cmatrix brightnessctl xset\
+        feh cmatrix brightnessctl playerctl xset\
         python3-pydbus
 }
 
